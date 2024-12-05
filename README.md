@@ -50,3 +50,18 @@ sudo apt-get install jenkins -y
 ```
 
 The command installs Jenkins. It involves importing the Jenkins GPG key for package verification, adding the Jenkins repository to the system's sources, updating package lists, and finally, installing Jenkins through the package manager (apt-get).
+
+## Check if Jenkins has been properly installed and running
+
+`sudo systemctl status jenkins`
+
+- on our jenkins instance, create new inbound rule for port 8080 on security group
+
+## Setup Jenkins on the web console
+
+- Input your Jenkins Instance ip address on your web browser i.e. http://public_ip_address:8080
+
+- On your Jenkins instance, check  "/var/lib/jenkins/secrets/initialAdminPassword" to know your password.
+- Installed the suggested plugins
+- Create a user account
+- Login to Jenkins
